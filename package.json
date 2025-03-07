@@ -1,0 +1,74 @@
+{
+  "name": "@bunstormjs/tsconfig",
+  "description": "Base TypeScript configuration files for BunStorm projects and packages.",
+  "version": "0.0.1",
+  "files": [
+    "tsconfig.app.json",
+    "tsconfig.client.json",
+    "tsconfig.package.json",
+    "tsconfig.base.json"
+  ],
+  "exports": {
+    "./tsconfig.app.json": "./tsconfig.app.json",
+    "./tsconfig.client.json": "./tsconfig.client.json",
+    "./tsconfig.package.json": "./tsconfig.package.json"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "release-it": "18.1.2",
+    "@release-it/conventional-changelog": "10.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "homepage": "https://github.com/bunstormjs/tsconfig#readme",
+  "bugs": {
+    "url": "https://github.com/bunstormjs/tsconfig/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunstormjs/tsconfig.git"
+  },
+  "keywords": [
+    "typescript",
+    "tsconfig",
+    "bun",
+    "bunstorm",
+    "bunstormjs"
+  ],
+  "author": "Sayed Ahmed",
+  "license": "MIT",
+  "publishConfig": {
+    "provenance": true
+  },
+  "release-it": {
+    "git": {
+      "requireCleanWorkingDir": true,
+      "requireUpstream": true,
+      "commitMessage": "chore(release): ${version}",
+      "tagAnnotation": "v${version}",
+      "push": true,
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true,
+      "skipChecks": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": {
+          "name": "angular"
+        }
+      }
+    }
+  },
+  "module": "index.ts",
+  "type": "module",
+  "private": true
+}
