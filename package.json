@@ -42,7 +42,8 @@
   "author": "Sayed Ahmed",
   "license": "MIT",
   "publishConfig": {
-    "provenance": true
+    "provenance": true,
+    "access": "public"
   },
   "release-it": {
     "git": {
