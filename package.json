@@ -1,7 +1,7 @@
 {
   "name": "@bunstormjs/tsconfig",
   "description": "Base TypeScript configuration files for BunStorm projects and packages.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "files": [
     "tsconfig.app.json",
     "tsconfig.client.json",
